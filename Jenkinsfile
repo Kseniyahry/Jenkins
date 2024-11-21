@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'add here your url', credentialsId: 'add credentialsId'
+                git url: 'https://github.com/Kseniyahry/Jenkins.git', credentialsId: 'add credentialsId'
             }
         }
         
