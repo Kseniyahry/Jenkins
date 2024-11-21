@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Kseniyahry/Jenkins.git', credentialsId: '27a6f8a1-f22f-4ac3-91df-2ef65236f7c0'
+                git branch: 'main', 
+                    url: 'https://github.com/Kseniyahry/Jenkins.git', credentialsId: '27a6f8a1-f22f-4ac3-91df-2ef65236f7c0'
             }
         }
         
@@ -12,7 +13,7 @@ pipeline {
             steps {
                 // Крок для збірки проекту з Visual Studio
                 // Встановіть правильні шляхи до рішення/проекту та параметри MSBuild
-                bat 'C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe test_repos.sln /t:Build /p:Configuration=Release'
+                bat 'C:/MSBuild/Current/Bin/MSBuild.exe test_repos.sln /t:Build /p:Configuration=Release'
             }
         }
 
@@ -26,8 +27,7 @@ pipeline {
 
     post {
     always {
-        // Publish test results using the junit step
-         // Specify the path to the XML test result files
+        junit '**/target/*.xml'
     }
 }
 }
