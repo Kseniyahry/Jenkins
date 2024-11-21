@@ -1,0 +1,5 @@
+﻿  test.cpp
+E:\Курсач\Jerkins\vs_mkr_test1\stringProcessor.h(11,34): warning C4114: Множественное использование одного и того же квалификатора типа.
+  (компиляция исходного файла "/test.cpp")
+  
+  test_repos.vcxproj -> E:\Курсач\Jerkins\vs_mkr_test1\x64\Debug\test_repos.exe
