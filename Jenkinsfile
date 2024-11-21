@@ -20,7 +20,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Команди для запуску тестів
-                bat "x64\\Debug\\test_repos.exe --gtest_output=xml:test_report.xml"
+                bat "x64\\Release\\test_repos.exe --gtest_output=xml:test_report.xml"
             }
         }
     }
