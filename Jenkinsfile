@@ -27,7 +27,7 @@ pipeline {
 
     post {
     always {
-        junit 'x64/Release/**'
+        junit 'x64/Release/test_report.xml'
     }
 }
 }
