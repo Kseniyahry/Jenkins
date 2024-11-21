@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Крок для збірки проекту з Visual Studio
                 // Встановіть правильні шляхи до рішення/проекту та параметри MSBuild
-                bat 'C:/MSBuild/Current/Bin/MSBuild.exe test_repos.sln /t:Build /p:Configuration=Release'
+                bat 'D:/VisualStudio/MSBuild/Current/Bin/MSBuild.exe test_repos.sln /t:Build /p:Configuration=Release'
             }
         }
 
