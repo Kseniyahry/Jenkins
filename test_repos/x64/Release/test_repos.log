@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  test.cpp
+E:\Projects\Jenkins\stringProcessor.h(11,34): warning C4114: Множественное использование одного и того же квалификатора типа.
+  (компиляция исходного файла "/test.cpp")
+  
+  test_repos.vcxproj -> E:\Projects\Jenkins\x64\Release\test_repos.exe
